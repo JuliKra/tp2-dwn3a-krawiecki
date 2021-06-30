@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <title>Julieta Krawiecki, DWN3A, PWA</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+  <!-- <link rel="stylesheet" type="text/css" href="css/estilo.css"> -->
+  <link rel="stylesheet" href="js/juego/style.css">
+
+</head>
+
+<body>
+  <div class="offline-banner">
+      <div class="text-center bg-danger">Status:
+          <span class="st-offline">ESTAS OFFLINE JUGA CON NOSOTROS HASTA QUE LA CONEXION REGRESE</span>
+      </div>
+  </div>
+  <header>
+      <nav class="navbar navbar-expand-md navbar-light colorNav py-0">
+          <a class="navbar-brand" href="index.html">
+              <h1>Be-da</h1>
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+              aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+              <ul class="navbar-nav ml-auto text-center">
+                  <li class="nav-item ">
+                      <a class=" nav-link" href="index.html">Inicio</a>
+                  </li>
+                  <li class="nav-item ">
+                      <a class="nav-link " href="animes.html">Animes</a>
+                  </li>
+                  <li class="nav-item ">
+                      <a class="nav-link" href="mangas.html">Mangas</a>
+                  </li>
+
+              </ul>
+
+          </div>
+      </nav>
+  </header>
+
+  <div class="wrap ">
+    <div class="game"></div>
+
+    <div class="modal-overlay">
+      <div class="modal">
+        <h2 class="winner">Winner</h2>
+        <button class="restart">Jugar de nuevo?</button>
+      </div>
+    </div>
+
+  </div>
+
+  <footer class="pie-pag pt-3 pb-2">
+    <div class="container">
+        <div class="row">
+
+            <section class="mb-8">
+
+                <a class="btn btn-outline-light btn-floating m-1" href="https://es-la.facebook.com" target="_blank" role="button"><i
+                        class="fab fa-facebook-f"></i></a>
+
+                <a class="btn btn-outline-light btn-floating m-1" href="https://twitter.com/?lang=es" target="_blank" role="button"><i
+                        class="fab fa-twitter"></i></a>
+
+                <a class="btn btn-outline-light btn-floating m-1" href="https://www.instagram.com" target="_blank" role="button"><i
+                        class="fab fa-instagram"></i></a>
+
+            </section>
+
+            <div class="col-12 col-md-6">
+                <div class="datos">
+
+                    <ul class="list-unstyled text-center text-white">
+                        <li>
+                            © Julieta Krawiecki-DWN3A-PWA 2021.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+  <script src="js/register-sw.js"></script>
+  <script src='js/juego/jquery.min.js'></script>
+  <script src="./js/juego/script.js"></script>
+
+</body>
+
+</html>

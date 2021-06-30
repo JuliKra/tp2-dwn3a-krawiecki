@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>Julieta Krawiecki, DWN3A, PWA</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="manifest" href="manifest.webmanifest">
+    <link rel="shortcut icon" href="res/img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <link rel="stylesheet" type="text/css" href="css/estilo.css">
+
+</head>
+
+<body>
+    <div class="offline-banner">
+        <div class="text-center bg-danger">Status:
+            <span class="st-offline">ESTAS OFFLINE!</span>
+        </div>
+    </div>
+    <header>
+        <nav class="navbar navbar-expand-md navbar-light colorNav py-0">
+            <a class="navbar-brand" href="index.html">
+                <h1>Be-da</h1>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav ml-auto text-center">
+                    <li class="nav-item ">
+                        <a class=" nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link " href="animes.html">Animes</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="mangas.html">Mangas</a>
+                    </li>
+
+                </ul>
+
+            </div>
+        </nav>
+    </header>
+    <main class="main">
+        <section class="container-fluid buscar ">
+
+            <form class="form-row justify-content-center needs-validation" novalidate="">
+                <div class="col-8 col-md-4">
+                    <label class="d-none" for="buscar">Buscar un manga</label>
+                    <input class="form-control" title="buscar" id="buscar" type="text"
+                        placeholder="Buscar un mangas...">
+                </div>
+                <div class="col-4 col-md-2 col-lg-1">
+                    <button class="btn btn-buscar w-100" id="btnBuscar" type="button">Enviar</button>
+                </div>
+            </form>
+        </section>
+
+        <section class="container">
+
+            <h2 class="h1 text-center pt-5">Tus Mangas</h2>
+
+            <div id="mangas" class="row justify-content-around "></div>
+        </section>
+    </main>
+
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/manga-api.js"></script>
+    <script src="js/register-sw.js"></script>
+
+</body>
+
+</html>
